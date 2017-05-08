@@ -21,3 +21,19 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 - 'test/y_test.txt': Test labels.
 - 'subject_train.txt' & 'subject_test.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
 ## Steps to clean up the data
+### Merges the training and the test sets to create one data set.
+1. Load the above 8 files into R. 'subjectID_train', 'data_train', and 'activityID_train' belong to the train data set. 'subjectID_test', 'data_test', 'activityID_test' belong to the test data set. 'activity_labels' stores the name of the 6 activities. 'features' stores the 561 variable/column names. 
+2. Combine the subject, data and activity tables into the complete data set respectively for train and test, resulting in 'completedata_train' and 'completedata_test'.
+3. Merge the 'completedata_train' and 'completedata_test' into 'alldata', and rename the columns using 'features'. 
+### Extracts only the measurements on the mean and standard deviation for each measurement.
+1. Create 'extract_features' to capture the position where the column names contain mean and std.
+2. Use 'extract_features' to subset alldata and store it in 'alldata_meanstd'.
+### Uses descriptive activity names to name the activities in the data set.
+1. Set the class of the acivity names to character using as.character.
+2. Use control structure if to replace the numeric value with actual activity names, referencing 'activity_labels'.
+### Appropriately labels the data set with descriptive variable names.
+1. Use gsub function to replace abbreviated variable names with the ones that show full descriptions.
+### From the data set in previous step, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+1. Melt 'alldata_meanstd' to 'meltalldata_meanstd', by setting SubjectID and ActivityID as id variable, the rest as measure variable.
+2. Use dcast function to reshape the data set into 'tidy_data'.
+3. Create new file 'tidy_data.txt' by write.table.
