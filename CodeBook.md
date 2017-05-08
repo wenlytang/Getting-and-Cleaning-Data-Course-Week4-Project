@@ -40,36 +40,36 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 3. Create new file 'tidy_data.txt' by write.table.
 4. The 'tidy_data' file has a dimension of 180*88. (180=30*6, 30 volunteers and 6 activities)
 
-##Variables
-SubjectID: Volunteer identifier from 1 to 30
-ActivityID: Names of the six activities
-tbodyacc-mean-x: Mean time for acceleration of body for X direction
-tbodyacc-mean-y: Mean time for acceleration of body for Y direction
-tbodyacc-mean-z: Mean time for acceleration of body for Z direction
-tbodyacc-std-x: Standard deviation of time for acceleration of body for X direction
-tbodyacc-std-y: Standard deviation of time for acceleration of body for Y direction
-tbodyacc-std-z: Standard deviation of time for acceleration of body for Z direction
-tgravityacc-mean-x: Mean time of acceleration of gravity for X direction
-tgravityacc-mean-y: Mean time of acceleration of gravity for Y direction
-tgravityacc-mean-z: Mean time of acceleration of gravity for Z direction
-tgravityacc-std-x: Standard deviation of time of acceleration of gravity for X direction
-tgravityacc-std-y: Standard deviation of time of acceleration of gravity for Y direction
-tgravityacc-std-z: Standard deviation of time of acceleration of gravity for Z direction
-tbodyaccjerk-mean-x: Mean time of body acceleration jerk for X direction
-tbodyaccjerk-mean-y: Mean time of body acceleration jerk for Y direction
-tbodyaccjerk-mean-z: Mean time of body acceleration jerk for Z direction
-tbodyaccjerk-std-x: Standard deviation of time of body acceleration jerk for X direction
-tbodyaccjerk-std-y: Standard deviation of time of body acceleration jerk for Y direction
-tbodyaccjerk-std-z: Standard deviation of time of body acceleration jerk for Z direction
-tbodygyro-mean-x: Mean body gyroscope measurement for X direction
-tbodygyro-mean-y: Mean body gyroscope measurement for Y direction
-tbodygyro-mean-z: Mean body gyroscope measurement for Z direction
-tbodygyro-std-x: Standard deviation of body gyroscope measurement for X direction
-tbodygyro-std-y: Standard deviation of body gyroscope measurement for Y direction
-tbodygyro-std-z: Standard deviation of body gyroscope measurement for Z direction
-tbodygyrojerk-mean-x: Mean jerk signal of body for X direction
-tbodygyrojerk-mean-y: Mean jerk signal of body for Y direction
-tbodygyrojerk-mean-z: Mean jerk signal of body for Z direction
+## Variables
+- SubjectID: Volunteer identifier from 1 to 30
+- ActivityID: Names of the six activities
+- tbodyacc-mean-x: Mean time for acceleration of body for X direction
+- tbodyacc-mean-y: Mean time for acceleration of body for Y direction
+- tbodyacc-mean-z: Mean time for acceleration of body for Z direction
+- tbodyacc-std-x: Standard deviation of time for acceleration of body for X direction
+- tbodyacc-std-y: Standard deviation of time for acceleration of body for Y direction
+- tbodyacc-std-z: Standard deviation of time for acceleration of body for Z direction
+- tgravityacc-mean-x: Mean time of acceleration of gravity for X direction
+- tgravityacc-mean-y: Mean time of acceleration of gravity for Y direction
+- tgravityacc-mean-z: Mean time of acceleration of gravity for Z direction
+- tgravityacc-std-x: Standard deviation of time of acceleration of gravity for X direction
+- tgravityacc-std-y: Standard deviation of time of acceleration of gravity for Y direction
+- tgravityacc-std-z: Standard deviation of time of acceleration of gravity for Z direction
+- tbodyaccjerk-mean-x: Mean time of body acceleration jerk for X direction
+- tbodyaccjerk-mean-y: Mean time of body acceleration jerk for Y direction
+- tbodyaccjerk-mean-z: Mean time of body acceleration jerk for Z direction
+- tbodyaccjerk-std-x: Standard deviation of time of body acceleration jerk for X direction
+- tbodyaccjerk-std-y: Standard deviation of time of body acceleration jerk for Y direction
+- tbodyaccjerk-std-z: Standard deviation of time of body acceleration jerk for Z direction
+- tbodygyro-mean-x: Mean body gyroscope measurement for X direction
+- tbodygyro-mean-y: Mean body gyroscope measurement for Y direction
+- tbodygyro-mean-z: Mean body gyroscope measurement for Z direction
+- tbodygyro-std-x: Standard deviation of body gyroscope measurement for X direction
+- tbodygyro-std-y: Standard deviation of body gyroscope measurement for Y direction
+- tbodygyro-std-z: Standard deviation of body gyroscope measurement for Z direction
+- tbodygyrojerk-mean-x: Mean jerk signal of body for X direction
+- tbodygyrojerk-mean-y: Mean jerk signal of body for Y direction
+- tbodygyrojerk-mean-z: Mean jerk signal of body for Z direction
 tbodygyrojerk-std-x: Standard deviation of jerk signal of body for X direction
 tbodygyrojerk-std-y: Standard deviation of jerk signal of body for Y direction
 tbodygyrojerk-std-z: Standard deviation of jerk signal of body for Z direction
